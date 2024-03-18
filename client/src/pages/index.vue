@@ -9,6 +9,6 @@ import {io, type Socket} from 'socket.io-client'
 const socket = ref<Socket>()
 
 onMounted(() => {
-  socket.value = io()
+  socket.value = io('http://localhost:3001')
 })
 </script>
